@@ -2,6 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { SEO } from "../components/seo"
 import Layout from '../components/layout'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const pageStyles = {
   color: "#232129",
@@ -139,6 +140,10 @@ const IndexPage = () => {
         update in real-time. 😎
       </p>
       <Link to="/about">About</Link>
+      <StaticImage
+                alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
+                src="../images/sterratoSand.jpeg"
+            />
       <ul style={listStyles}>
         <li style={docLinkStyle}>
           <a
